@@ -7,7 +7,7 @@ Transformar a aplicação de fichas de avaliação de um site estático front-en
 ## Tasks
 
 - [ ] 1. Configurar estrutura do projeto e dependências
-  - [ ] 1.1 Criar `package.json` com script `start` e dependências
+  - [x] 1.1 Criar `package.json` com script `start` e dependências
     - Criar ficheiro `package.json` na raiz do projeto com `"start": "node server.js"`
     - Declarar `express` como dependência
     - Declarar `vitest`, `fast-check` e `supertest` como devDependencies

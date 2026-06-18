@@ -1,0 +1,18 @@
+{
+  "name": "ficha-estudo-meio",
+  "version": "1.0.0",
+  "description": "Ficha de avaliação de Estudo do Meio - 3.º Ano",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "vitest --run"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "fast-check": "^3.23.2",
+    "supertest": "^7.1.0",
+    "vitest": "^3.1.4"
+  }
+}
