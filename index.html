@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ficha Final - Estudo do Meio - 3.º Ano</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- jsPDF para geração automática do PDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="hero">
+            <h1>🌍 Ficha Final de Estudo do Meio</h1>
+            <p>3.º Ano • Avaliação Final do 3.º Período</p>
+        </header>
+
+        <section id="cabecalho" class="card">
+
+            <h2>📝 Identificação do Aluno</h2>
+
+            <label for="nome">
+                Nome:
+                <input
+                    id="nome"
+                    type="text"
+                    maxlength="100"
+                    autocomplete="name"
+                    placeholder="Escreve o teu nome">
+            </label>
+
+            <label for="numero">
+                Nº:
+                <input
+                    id="numero"
+                    type="text"
+                    maxlength="10"
+                    autocomplete="off"
+                    placeholder="Número">
+            </label>
+
+            <div class="instrucoes">
+                <h3>📋 Instruções</h3>
+
+                <p>Lê o teste todo antes de o entregares.</p>
+
+                <p>Usa lápis de cor sempre que for pedido.</p>
+
+                <p>Este teste foi criado com ajuda de Inteligência Artificial e pode conter erros.</p>
+            </div>
+
+        </section>
+
+        <section class="progress-card">
+
+            <div class="bar">
+                <div id="fill" class="fill">
+                    0%
+                </div>
+            </div>
+
+            <p id="contador">
+                Exercício 1
+            </p>
+
+        </section>
+
+        <main id="pergunta" class="card">
+
+            <!-- preenchido pelo JavaScript -->
+
+        </main>
+
+        <section id="resultado" class="card resultado">
+
+            <h2>📊 Resultados Finais</h2>
+
+            <div id="total"></div>
+
+            <div id="nota"></div>
+
+            <div id="certificado"></div>
+
+            <hr>
+
+            <h3>🔍 Rever Exercícios</h3>
+
+            <div id="botoesRev" class="botoes-revisao"></div>
+
+            <div id="comparacao" class="comparacao"></div>
+
+        </section>
+
+    </div>
+
+    <!-- Banco de perguntas -->
+    <script src="perguntas.js"></script>
+
+    <!-- Aplicação -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

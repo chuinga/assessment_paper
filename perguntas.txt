@@ -1,0 +1,309 @@
+let perguntas = [
+
+/* CADEIAS ALIMENTARES */
+
+{
+q:"Numa cadeia alimentar, as plantas são:",
+op:["Produtores","Consumidores","Predadores","Parasitas"],
+c:["Produtores"],
+t:"single"
+},
+{
+q:"Seleciona consumidores primários.",
+op:["Coelho","Gazela","Vaca","Raposa"],
+c:["Coelho","Gazela","Vaca"],
+t:"multi"
+},
+{
+q:"Seleciona consumidores finais.",
+op:["Leão","Águia","Lobo","Erva"],
+c:["Leão","Águia","Lobo"],
+t:"multi"
+},
+{
+q:"Os produtores fabricam o seu alimento através da:",
+op:["Fotossíntese","Respiração","Digestão","Poluição"],
+c:["Fotossíntese"],
+t:"single"
+},
+{
+q:"Numa cadeia alimentar, a energia começa:",
+op:["Nas plantas","Nos carnívoros","Nos oceanos","Nas rochas"],
+c:["Nas plantas"],
+t:"single"
+},
+{
+q:"Seleciona seres herbívoros.",
+op:["Coelho","Vaca","Cabra","Raposa"],
+c:["Coelho","Vaca","Cabra"],
+t:"multi"
+},
+{
+q:"Um animal que se alimenta de outros animais é:",
+op:["Carnívoro","Herbívoro","Produtor","Decompositor"],
+c:["Carnívoro"],
+t:"single"
+},
+{
+q:"A cadeia alimentar representa:",
+op:["Quem se alimenta de quem","As estações do ano","Os rios","Os planetas"],
+c:["Quem se alimenta de quem"],
+t:"single"
+},
+{
+q:"Seleciona produtores.",
+op:["Erva","Pinheiro","Roseira","Lobo"],
+c:["Erva","Pinheiro","Roseira"],
+t:"multi"
+},
+{
+q:"Quando desaparece uma espécie, outras podem ser afetadas.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+
+/* REPRODUÇÃO */
+
+{
+q:"Os animais vivíparos desenvolvem-se:",
+op:["No ventre materno","Num ovo","Numa semente","No solo"],
+c:["No ventre materno"],
+t:"single"
+},
+{
+q:"Seleciona animais vivíparos.",
+op:["Cão","Gato","Cavalo","Galinha"],
+c:["Cão","Gato","Cavalo"],
+t:"multi"
+},
+{
+q:"Seleciona animais ovíparos.",
+op:["Galinha","Pato","Tartaruga","Coelho"],
+c:["Galinha","Pato","Tartaruga"],
+t:"multi"
+},
+{
+q:"Os animais ovíparos nascem:",
+op:["De ovos","De sementes","Do solo","Das folhas"],
+c:["De ovos"],
+t:"single"
+},
+{
+q:"As sementes podem originar:",
+op:["Novas plantas","Animais","Pedras","Nuvens"],
+c:["Novas plantas"],
+t:"single"
+},
+{
+q:"Seleciona plantas que se reproduzem por sementes.",
+op:["Feijoeiro","Milho","Girassol","Cão"],
+c:["Feijoeiro","Milho","Girassol"],
+t:"multi"
+},
+{
+q:"A reprodução permite:",
+op:["A continuação das espécies","A poluição","A extinção","A erosão"],
+c:["A continuação das espécies"],
+t:"single"
+},
+{
+q:"A estaca é utilizada na reprodução de algumas:",
+op:["Plantas","Montanhas","Rochas","Nuvens"],
+c:["Plantas"],
+t:"single"
+},
+{
+q:"Seleciona exemplos de reprodução das plantas.",
+op:["Semente","Estaca","Enxertia","Motor"],
+c:["Semente","Estaca","Enxertia"],
+t:"multi"
+},
+{
+q:"A roseira pode reproduzir-se por:",
+op:["Estaca","Ovo","Ventre materno","Casulo"],
+c:["Estaca"],
+t:"single"
+},
+
+/* FATORES ESSENCIAIS À VIDA */
+
+{
+q:"Seleciona fatores essenciais para a vida.",
+op:["Água","Ar","Luz","Televisão"],
+c:["Água","Ar","Luz"],
+t:"multi"
+},
+{
+q:"Os seres vivos precisam de água para sobreviver.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+{
+q:"A luz é importante para:",
+op:["As plantas","Os automóveis","As pedras","O plástico"],
+c:["As plantas"],
+t:"single"
+},
+{
+q:"O solo fornece nutrientes às plantas.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+{
+q:"Seleciona fatores ambientais importantes.",
+op:["Temperatura adequada","Água","Ar","Telemóvel"],
+c:["Temperatura adequada","Água","Ar"],
+t:"multi"
+},
+
+/* OCEANOS */
+
+{
+q:"Os oceanos cobrem grande parte da superfície terrestre.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+{
+q:"Seleciona benefícios dos oceanos.",
+op:["Produzem oxigénio","Fornecem alimentos","Regulam o clima","Produzem lixo"],
+c:["Produzem oxigénio","Fornecem alimentos","Regulam o clima"],
+t:"multi"
+},
+{
+q:"Muitos seres vivos vivem nos oceanos.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+{
+q:"Os oceanos ajudam a regular:",
+op:["O clima","Os semáforos","Os computadores","Os livros"],
+c:["O clima"],
+t:"single"
+},
+{
+q:"Seleciona alimentos provenientes do mar.",
+op:["Peixe","Marisco","Atum","Pedras"],
+c:["Peixe","Marisco","Atum"],
+t:"multi"
+},
+{
+q:"A poluição marinha afeta os seres vivos.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+{
+q:"Seleciona ações que protegem os oceanos.",
+op:["Reciclar","Reduzir plástico","Não deitar lixo ao mar","Poluir rios"],
+c:["Reciclar","Reduzir plástico","Não deitar lixo ao mar"],
+t:"multi"
+},
+{
+q:"O plástico no mar pode prejudicar:",
+op:["Animais marinhos","Peixes","Tartarugas","Nuvens"],
+c:["Animais marinhos","Peixes","Tartarugas"],
+t:"multi"
+},
+
+/* POLUIÇÃO */
+
+{
+q:"Seleciona tipos de poluição.",
+op:["Ar","Água","Solo","Amizade"],
+c:["Ar","Água","Solo"],
+t:"multi"
+},
+{
+q:"O fumo das fábricas provoca poluição do:",
+op:["Ar","Solo","Mar","Sol"],
+c:["Ar"],
+t:"single"
+},
+{
+q:"Os derrames de petróleo poluem:",
+op:["A água","O espaço","A Lua","O vento"],
+c:["A água"],
+t:"single"
+},
+{
+q:"Seleciona consequências da poluição.",
+op:["Doenças","Aquecimento global","Desaparecimento de espécies","Ar mais limpo"],
+c:["Doenças","Aquecimento global","Desaparecimento de espécies"],
+t:"multi"
+},
+{
+q:"O excesso de lixo pode poluir:",
+op:["Solo","Água","Ar","Todos os anteriores"],
+c:["Todos os anteriores"],
+t:"single"
+},
+{
+q:"Seleciona fontes de poluição do ar.",
+op:["Automóveis","Fábricas","Incêndios","Árvores"],
+c:["Automóveis","Fábricas","Incêndios"],
+t:"multi"
+},
+{
+q:"O uso excessivo de pesticidas pode poluir:",
+op:["Solo","Sol","Lua","Marte"],
+c:["Solo"],
+t:"single"
+},
+{
+q:"A poluição pode afetar a saúde humana.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+
+/* PROTEÇÃO AMBIENTAL */
+
+{
+q:"Seleciona atitudes amigas do ambiente.",
+op:["Reciclar","Poupar água","Plantar árvores","Atirar lixo ao chão"],
+c:["Reciclar","Poupar água","Plantar árvores"],
+t:"multi"
+},
+{
+q:"Reciclar ajuda a:",
+op:["Reduzir resíduos","Produzir lixo","Poluir rios","Destruir florestas"],
+c:["Reduzir resíduos"],
+t:"single"
+},
+{
+q:"Poupar água é importante porque:",
+op:["É um recurso essencial","Não serve para nada","É infinita","Só existe no mar"],
+c:["É um recurso essencial"],
+t:"single"
+},
+{
+q:"Seleciona medidas para reduzir a poluição.",
+op:["Usar transportes públicos","Reciclar","Reduzir plástico","Queimar lixo"],
+c:["Usar transportes públicos","Reciclar","Reduzir plástico"],
+t:"multi"
+},
+{
+q:"Plantar árvores ajuda o ambiente.",
+op:["Verdadeiro","Falso"],
+c:["Verdadeiro"],
+t:"single"
+},
+{
+q:"Seleciona formas de poupar energia.",
+op:["Apagar luzes desnecessárias","Desligar aparelhos","Usar energia de forma responsável","Deixar tudo ligado"],
+c:["Apagar luzes desnecessárias","Desligar aparelhos","Usar energia de forma responsável"],
+t:"multi"
+},
+{
+q:"Os transportes públicos ajudam a reduzir:",
+op:["A poluição do ar","Os oceanos","As plantas","As montanhas"],
+c:["A poluição do ar"],
+t:"single"
+}
+
+];
